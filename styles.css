@@ -672,3 +672,6 @@ body {
   display: inline-flex;
   align-items: center; /* Centra el contenido verticalmente */
 }
+.action-section {
+  margin-bottom: 35px;
+}
