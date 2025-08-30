@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Style Selection - Keshot AI</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="app-container">
+      <div class="mobile-card">
+        <!-- Header -->
+        <header class="header">
+          <h1 class="title">Choose your options</h1>
+          <button class="close-btn" aria-label="Close">
+            <svg
+              width="20"
+              height="20"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <line x1="18" y1="6" x2="6" y2="18"></line>
+              <line x1="6" y1="6" x2="18" y2="18"></line>
+            </svg>
+          </button>
+        </header>
+
+        <!-- Gender Selection -->
+        <section class="selection-section">
+          <div class="toggle-group">
+            <button class="toggle-btn active" data-option="female">
+              <span>Female</span>
+            </button>
+            <button class="toggle-btn" data-option="male">
+              <span>Male</span>
+            </button>
+          </div>
+        </section>
+
+        <section class="selection-section">
+          <h2 class="section-title">Skin Tone</h2>
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slider-line"></div>
+              <!-- línea delgada -->
+              <div class="slider-thumb" data-value="light"></div>
+              <!-- bolita -->
+            </div>
+            <div class="slider-labels">
+              <span class="slider-label">Light</span>
+              <span class="slider-label">Medium</span>
+              <span class="slider-label">Dark</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Style Preview -->
+        <section class="preview-section">
+          <div class="image-container">
+            <img
+              src="https://raw.githubusercontent.com/edvardoviedo/GUIkeshot/refs/heads/main/IA_photo.jpg"
+              alt="AI Generated Portrait"
+              class="preview-image"
+            />
+            <div class="image-overlay">
+              <div class="style-indicator">
+                <span class="style-name">Floral</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Navigation Arrows -->
+          <button class="nav-arrow nav-arrow-left" aria-label="Previous style">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="15,18 9,12 15,6"></polyline>
+            </svg>
+          </button>
+          <button class="nav-arrow nav-arrow-right" aria-label="Next style">
+            <svg
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <polyline points="9,18 15,12 9,6"></polyline>
+            </svg>
+          </button>
+        </section>
+
+        <!-- Style Selection Message -->
+        <section class="message-section">
+          <p class="selection-message">You must select your style!</p>
+        </section>
+
+        <!-- Progress Indicator -->
+        <section class="progress-section">
+          <div class="progress-dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot active"></div>
+            <div class="dot"></div>
+          </div>
+        </section>
+
+        <!-- Action Buttons -->
+        <section class="action-section">
+          <button class="action-btn secondary">Back</button>
+          <button class="share-btn" aria-label="Share">
+            <svg
+              width="18"
+              height="18"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+              <polyline points="16,6 12,2 8,6"></polyline>
+              <line x1="12" y1="2" x2="12" y2="15"></line>
+            </svg>
+            <span>Share</span>
+          </button>
+          <button class="action-btn primary">Next</button>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="brand-logo">
+            <span class="brand-text">Destination</span>
+            <span class="brand-highlight">Adventure</span>
+          </div>
+        </footer>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
